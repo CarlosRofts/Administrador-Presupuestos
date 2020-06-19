@@ -67,6 +67,12 @@ function App() {
     // rehacer el array sin el elemento a borrar
     const nuevosGastos = gastos.filter(gasto => gasto.id !== id)
     guardarGastos(nuevosGastos)
+
+    // devolviendo el dinero al valor restante al eliminar el gasto 
+    const nuevosRestante = gastos.filter(gasto => gasto.id === id)
+    let sum = restante + nuevosRestante[0].cantidad
+    localStorage.setItem('restante',JSON.stringify(sum)) //(Key,Valor) //SET (lo agrega a la cola)
+    guardarRestante(sum)
   } 
 
   return (
