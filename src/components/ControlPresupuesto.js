@@ -25,13 +25,14 @@ const ControlPresupuesto = ({presupuesto , restante ,guardarPresupuesto,guardarG
     }   
     
 
-    return( 
+    return(         
             <Fragment>
                 {/*Alerts presupuesto y restante  */}
-                <div className="col btn-group mt-lg-4"> 
+                <div className="col btn-group mt-lg-4 flex-column flex-md-row">{/* //! Agregar un flex-colums flex-md-row para corregir el colapsadod de margenes ya que las fuentes al no disminuir lo causan  */}
+
                     <div className="alert alert-primary">Presupuesto: ${presupuesto} </div>
                     <div className={revisarPresupuesto(presupuesto , restante)}>
-                        Restante:${restante}  
+                        Restante:$ {restante}  
                     </div>
                     <button type="button" 
                                 class="btn  btn-secondary h-auto"  
