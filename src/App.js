@@ -79,7 +79,7 @@ function App() {
     <Fragment>
       <SocialLinks/>
       <div className="header w-100 py-3 mb-5">
-          <h1>Admistrador de Gastos</h1>   
+          <h1>Administrador de Gastos</h1>   
       </div>
 
       <div className="container d-flex justify-content-center">
