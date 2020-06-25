@@ -42,7 +42,7 @@ const Pregunta = ({guardarPresupuesto , guardarRestante , actualizarPregunta}) =
                 onSubmit={agregarPresupuesto}
             >
 				<div className="form-group row justify-content-center">
-					<label className="mr-2 p-2 ">Presupuesto</label>
+					{/* <label className="mr-2 p-2 ">Presupuesto</label> */}
 					<input 
 						type="number" 
 						className="form-control w-75" 

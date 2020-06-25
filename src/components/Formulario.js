@@ -70,10 +70,10 @@ const Formulario = ({guardarGasto , guardarCrearGasto}) => {
                 />
             </div>
 
-            <div className="form-group row mx-5">
+            <div className="form-group row mx-2 mx-md-5">
                 <input 
                         type="submit"
-                        className=" btn btn-primary mb-2 col "
+                        className=" btn btn-primary mb-2 col  text-wrap"
                         value="Agregar Gasto"
                 />
             </div>

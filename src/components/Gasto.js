@@ -5,7 +5,8 @@ const Gasto = ({gasto , eliminarGasto }) => {
     return (         
         <li className="gasto">
             <p>
-                {gasto.nombre}
+                <span>{gasto.nombre}</span>
+
                 <span className="gasto">
                     ${gasto.cantidad}
                     <i className="mx-1">
